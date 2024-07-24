@@ -9,11 +9,16 @@ Share the Short URL: You can then share the short URL, which redirects users to 
 Examples of URL Shortening Services:
 
 Bit.ly
+
 TinyURL
+
 goo.gl (discontinued but still used)
+
 Ow.ly (Hootsuite)
+
 T2M
-Benefits:
+
+<b>Benefits:</b>
 
 Convenience: Easier to share and manage links.
 Tracking and Analytics: Some services provide detailed statistics on link clicks.
@@ -21,4 +26,5 @@ Aesthetic: Short URLs look cleaner, especially in print or digital media.
 Usage Example:
 
 Long URL: https://www.example.com/some/very/long/path/to/a/resource
+
 Short URL: https://bit.ly/2A1b2C3
