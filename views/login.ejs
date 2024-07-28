@@ -1,21 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #ccc;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        label {
+            display: block;
+            font-size: 1.2em;
+            margin: 10px 0 5px;
+            color: black;
+        }
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px;
+            border: 1px solid black;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login </title>
+    <title>Login</title>
 </head>
 <body>
-    <h1>Login  </h1>
-    <form action="/user/login" method="post">
-
-        <label>Email</label>
-        <input type="email" required name="email">
-        <br><br>
-        <label>Password</label>
-        <input type="password" required name="password">
-        <br><br>
-        <button type="submit">Login</button>
-    </form>
+    <div class="container">
+        <h1>Login</h1>
+        <form action="/user/login" method="post">
+            <label for="email">Email</label>
+            <input type="email" id="email" required name="email">
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" required name="password">
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
 </body>
 </html>
