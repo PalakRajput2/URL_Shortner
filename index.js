@@ -26,10 +26,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(checkForAuthentication);
 
-app.get('/', (req, res) => {
-
-  return res.redirect('/login');
-});
 
 app.use('/url', restrictTo(["NORMAL", "ADMIN"]), urlRoute);
 app.use('/user', userRouter);
